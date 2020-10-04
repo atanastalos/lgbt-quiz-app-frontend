@@ -12,7 +12,7 @@ export default function Header() {
         <Navbar bg="dark" variant="dark">
           <Nav className="mr-auto">
             <Nav.Link href="/">Login</Nav.Link>
-            <Nav.Link href="/resume">Register</Nav.Link>
+            <Nav.Link href="/register">Register</Nav.Link>
             <Nav.Link href="/logout" />
           </Nav>
         </Navbar>
