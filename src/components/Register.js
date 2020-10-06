@@ -6,10 +6,13 @@ export default function Register() {
     <div className="input-form">
       <Form>
         <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="username" placeholder="Type your email" />
+        </Form.Group>
+        <Form.Group controlId="formBasicUsername">
           <Form.Label>Username</Form.Label>
           <Form.Control type="username" placeholder="Express yourself" />
         </Form.Group>
-
         <Form.Group controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Create a safe password" />
