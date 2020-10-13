@@ -1,13 +1,14 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import config from '../config';
 
 export default function UnmoderatedQuestions() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
     axios
-      .get('http://localhost:8080/questions/unmoderated')
+      .get(`${config.backendUrl}/questions/unmoderated`)
       .then(res => {
         setQuestions(res.data);
       })
