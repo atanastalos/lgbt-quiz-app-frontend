@@ -14,16 +14,19 @@ code {
 }
 
 .input-form {
-  padding-top: 60px;
-  margin: 0 auto;
-  width: 60%
+  padding: 20px;
+  margin: 60px auto 0px;
+  width: 60%;
+  background-color: white;
 }
 
 .form-group {
   padding-bottom: 20px;
 }
 
-.form-label {
-  color: white;
-  font-weight: bold;
+.list {
+  padding: 20px;
+  margin: 60px auto 0px;
+  width: 60%;
+  background-color: white;
 }

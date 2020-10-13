@@ -5,6 +5,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 import Login from './Login';
 import Register from './Register';
+import Unmoderated from './UnmoderatedQuestions';
 
 export default function Header() {
   return (
@@ -14,6 +15,7 @@ export default function Header() {
           <Nav className="mr-auto">
             <Nav.Link href="/">Login</Nav.Link>
             <Nav.Link href="/register">Register</Nav.Link>
+            <Nav.Link href="/unmoderated">Unmoderated</Nav.Link>
           </Nav>
         </Navbar>
         <Switch>
@@ -22,6 +24,9 @@ export default function Header() {
           </Route>
           <Route path="/register">
             <Register />
+          </Route>
+          <Route path="/unmoderated">
+            <Unmoderated />
           </Route>
         </Switch>
       </main>
